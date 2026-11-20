@@ -98,5 +98,9 @@ Image_Deblurring_Project/
 
 ---
 
-## 👤 Author
-* **Tanishk Raj** – B.Tech Computer Science & Engineering (Capstone Project, November 2026).
+## 👥 Authors
+* **Tanmay Mallik** – Computer Science & Engineering
+* **Kanishk Raj** – Computer Science & Engineering
+* **Preetheam Kattle** – Artificial Intelligence & Data Science
+
+*(B.Tech Capstone Project, November 2026)*
