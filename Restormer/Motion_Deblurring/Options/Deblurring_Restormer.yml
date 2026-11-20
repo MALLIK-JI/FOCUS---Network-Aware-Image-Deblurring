@@ -1,12 +1,10 @@
 
-# General settings
 name: Deblurring_Restormer_CustomLoss
 model_type: ImageCleanModel
 scale: 1
 num_gpu: 1
 manual_seed: 100
 
-# Dataset and data loader settings
 datasets:
   train:
     name: TrainSet
@@ -38,7 +36,6 @@ datasets:
     dataroot_lq: ./Datasets/val/GoPro/input_crops
     io_backend:
       type: disk
-# Network architecture
 network_g:
   type: Restormer
   inp_channels: 3
@@ -52,14 +49,12 @@ network_g:
   LayerNorm_type: WithBias
   dual_pixel_task: false
 
-# Model paths
 
 path:
   pretrain_network_g: ./pretrained_models/motion_deblurring.pth
   strict_load_g: true
   resume_state: ~
 
-# Training settings
 train:
   total_iter: 100
   warmup_iter: -1
@@ -82,7 +77,6 @@ train:
     weight_decay: !!float 1e-4
     betas: [0.9, 0.999]
 
-  # Proposed custom combined loss
   pixel_opt:
     type: CombinedDeblurLoss
     charbonnier_weight: 0.5
@@ -90,7 +84,6 @@ train:
     edge_weight: 0.2
     eps: 0.001
 
-# Validation settings
 val:
   window_size: 8
   val_freq: 50
@@ -105,7 +98,6 @@ val:
       crop_border: 0
       test_y_channel: false
 
-# Logging settings
 logger:
   print_freq: 1
   save_checkpoint_freq: 100
@@ -114,7 +106,6 @@ logger:
     project: ~
     resume_id: ~
 
-# Distributed training settings
 dist_params:
   backend: gloo
   port: 29500

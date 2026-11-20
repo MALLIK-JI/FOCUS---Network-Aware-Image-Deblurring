@@ -2,7 +2,7 @@
 title Launching Image Deblurring Suite...
 echo ========================================================
 echo   Network-Aware Adaptive Image Deblurring Suite
-echo   B.Tech Capstone Project - Tanishk Raj
+echo   B.Tech Capstone Project
 echo ========================================================
 echo.
 
