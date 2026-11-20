@@ -1,0 +1,57 @@
+# Virtual Environment
+deblur_env/
+venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Large Datasets & Archives
+datasets/
+Datasets/
+test/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Large Model Checkpoints (GitHub 100MB hard limit)
+*.pth
+*.pt
+*.onnx
+*.bin
+# Keep the lightweight edge model (only 0.37 MB)
+!Restormer/Motion_Deblurring/lightweight/checkpoints_continued/lightweight_continued_best.pth
+
+# Training Experiments & Tensorboard Logs
+experiments/
+tb_logger/
+*.log
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.git_original/
+
+# Images & Visualizations (keep repository lightweight & code-focused)
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tiff
+*.webp
+
+# Temporary & Scratch Files
+Complete_Research_Paper.md
+calculate_metrics.py
+test_custom_loss.py
+scratch_*
+*.pptx
+*.ppt
